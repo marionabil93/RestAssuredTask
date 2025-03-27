@@ -1,25 +1,18 @@
 package tests;
 
+import Base.BaseTest;
 import config.ConfigManager;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utils.LoggerUtil;
 
 import static io.restassured.RestAssured.given;
 
-public class UserTests {
-    private static String baseUrl;
-    private int userId; // Store the created user ID
+public class UserTests extends BaseTest {
+    private int userId;
 
-    @BeforeClass
-    public void setup() {
-        baseUrl = ConfigManager.getBaseUrl();
-        RestAssured.baseURI = baseUrl;
-    }
 
    @Test(priority = 1 , description = "Create User")
     public void createUser() {

@@ -2,6 +2,7 @@ package config;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Properties;
 
 public class ConfigManager {
@@ -9,7 +10,7 @@ public class ConfigManager {
 
     static {
         try {
-            FileInputStream file = new FileInputStream("config.properties");
+            InputStream file = ConfigManager.class.getClassLoader().getResourceAsStream("config.properties");
             properties.load(file);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load config.properties");
