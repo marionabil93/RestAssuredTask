@@ -45,20 +45,19 @@ mvn test -DsuiteXmlFile=src/test/resources/testng.xml
 ```xml
 <dependencies>
     <dependency>
-        <groupId>io.rest-assured</groupId>
-        <artifactId>rest-assured</artifactId>
-        <version>5.4.0</version>
-    </dependency>
-    <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>7.9.0</version>
-        <scope>test</scope>
+        <version>7.10.2</version>
     </dependency>
     <dependency>
         <groupId>org.apache.logging.log4j</groupId>
         <artifactId>log4j-core</artifactId>
-        <version>2.21.0</version>
+        <version>2.24.3</version>
+    </dependency>
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>4.3.0</version>
     </dependency>
 </dependencies>
 ```
