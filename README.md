@@ -38,25 +38,6 @@ mvn test
 mvn test -DsuiteXmlFile=src/test/resources/testng.xml
 ```
 
-## 📂 Project Structure
-```
-├── src
-│   ├── main
-│   │   ├── java
-│   │   ├── resources
-│   ├── test
-│   │   ├── java
-│   │   │   ├── BaseTest.java  # Common setup for API tests
-│   │   │   ├── GetUserTest.java  # Test GET request
-│   │   │   ├── CreateUserTest.java  # Test POST request
-│   │   │   ├── UpdateUserTest.java  # Test PUT request
-│   │   ├── resources
-│   │   │   ├── log4j2.xml  # Logging configuration
-│   │   │   ├── testng.xml  # Test suite configuration
-├── pom.xml  # Maven dependencies
-└── README.md  # Documentation
-```
-
 ## 📝Reports
 - **TestNG Reports:** Available in `target/surefire-reports/emailable-report.html`
 
